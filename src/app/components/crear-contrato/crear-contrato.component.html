@@ -1,0 +1,46 @@
+<mat-card>
+    <form [formGroup]="contratoForm" (ngSubmit)="onSubmit()">
+      <mat-form-field>
+        <mat-label>Identificador</mat-label>
+        <input matInput formControlName="identificador" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Valor</mat-label>
+        <input matInput type="number" formControlName="valor" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Nombre Contratante</mat-label>
+        <input matInput formControlName="nombreContratante" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Documento Contratante</mat-label>
+        <input matInput formControlName="documentoContratante" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Nombre Contratantista</mat-label>
+        <input matInput formControlName="nombreContratantista" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Documento Contratantista</mat-label>
+        <input matInput formControlName="documentoContratantista" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Fecha Inicial</mat-label>
+        <input matInput type="date" formControlName="fechaInicial" required />
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Fecha Final</mat-label>
+        <input matInput type="date" formControlName="fechaFinal" required />
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">Crear Contrato</button>
+    </form>
+  </mat-card>
+  

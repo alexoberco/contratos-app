@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-table [dataSource]="contratos">
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> {{ contrato.id }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="identificador">
+        <mat-header-cell *matHeaderCellDef> Identificador </mat-header-cell>
+        <mat-cell *matCellDef="let contrato"> {{ contrato.identificador }} </mat-cell>
+      </ng-container>
+  
+      <!-- Agrega más columnas según sea necesario -->
+  
+      <mat-header-row *matHeaderRowDef="['id', 'identificador']"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['id', 'identificador']"></mat-row>
+    </mat-table>
+  </mat-card>
+  
